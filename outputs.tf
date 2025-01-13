@@ -31,3 +31,6 @@ output "database_route_table_id" {
 output "default_vpc" {
     value = data.aws_vpc.default.cidr_block
 }
+output "db_subnet_group_name" {
+    value = aws_db_subnet_group.database_group.id
+}
