@@ -14,7 +14,7 @@ output "database_subnet_ids" {
     value = aws_subnet.private[*].id
 }
 output "db_subnet_group_arn" {
-    value = aws_db_subnet_group.database_group.arn
+    value = aws_db_subnet_group.db_group.arn
 }
 output "nat_gateway_id" {
     value = aws_nat_gateway.main.id
